@@ -6,22 +6,33 @@
 
 class Hero:
     def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
         # TODO: store `name` and `hp` as INSTANCE attributes
         pass
 
     def take_damage(self, amount):
+        self.hp -= amount
+        if self.hp < 0:
+            self.hp = 0
+
+    def heal(self, amount):
+        self.hp += amount
         # TODO: subtract `amount` from this hero's hp
         pass
-
 
 # ------------------------------------------------------------
 #  Step 3 — Instantiate two heroes and try them out.
 #  Uncomment and complete the lines below once your class works.
 # ------------------------------------------------------------
-# arthur = Hero("Arthur", 100)
-# morgana = Hero("Morgana", 100)
 
-# arthur.take_damage(10)
+arthur = Hero("Arthur", 100)
+morgana = Hero("Morgana", 100)
+
+arthur.take_damage(10)
+
+print(Arthur.name, Arthur.hp)
+print(Morgana.name, Morgana.hp)
 
 # print(arthur.hp)     # Expected: 90
 # print(morgana.hp)    # Expected: 100

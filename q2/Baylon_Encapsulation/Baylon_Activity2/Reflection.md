@@ -1,0 +1,1 @@
+@property lets us access getter and setter methods like regular attributes, such as rectangle.width, making the code easier to read.

@@ -1,0 +1,6 @@
+1. What do all the methods (move(), special_move(), use()) in the previous activities have in common?
+They all demonstrate polymorphism because they use the same method names but can perform different actions depending on the object.
+2. How does this activity show polymorphism in a gaming context?
+It shows polymorphism because different characters and items can perform different actions using the same method. For example, a Warrior uses a sword, while a Mage casts a spell. Different potions also have different effects when used.
+3. Can you think of other examples where the same action behaves differently depending on the character or item?
+Yes. An attack action can be different depending on the character. A Warrior attacks using a sword, an Archer shoots arrows, and a Mage uses magic. They all attack, but in different ways.
